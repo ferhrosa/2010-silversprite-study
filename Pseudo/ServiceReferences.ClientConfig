@@ -1,0 +1,17 @@
+﻿<configuration>
+    <system.serviceModel>
+        <bindings>
+            <basicHttpBinding>
+                <binding name="BasicHttpBinding_IServicoPseudo" maxBufferSize="2147483647"
+                    maxReceivedMessageSize="2147483647">
+                    <security mode="None" />
+                </binding>
+            </basicHttpBinding>
+        </bindings>
+        <client>
+            <endpoint address="http://localhost:49657/Pseudo.Web/ServicoPseudo.svc"
+                binding="basicHttpBinding" bindingConfiguration="BasicHttpBinding_IServicoPseudo"
+                contract="Servicos.IServicoPseudo" name="BasicHttpBinding_IServicoPseudo" />
+        </client>
+    </system.serviceModel>
+</configuration>

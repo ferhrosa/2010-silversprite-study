@@ -1,0 +1,56 @@
+﻿<UserControl x:Class="Pseudo.ObjetoItem"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" 
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    MinWidth="10"
+    MouseEnter="ObjetoItem_MouseEnter"
+    MouseLeave="ObjetoItem_MouseLeave"
+    MouseLeftButtonDown="ObjetoItem_MouseLeftButtonDown"
+    MouseLeftButtonUp="ObjetoItem_MouseLeftButtonUp">
+    <UserControl.Resources>
+        <Storyboard x:Name="sbMouseEnter">
+            <ColorAnimation x:Name="sbMouseEnter_quadroFundo1" Storyboard.TargetName="quadroFundo1" Storyboard.TargetProperty="Color" From="#006699cc" To="#996699cc" Duration="0:0:0.3" />
+            <ColorAnimation x:Name="sbMouseEnter_quadroFundo2" Storyboard.TargetName="quadroFundo2" Storyboard.TargetProperty="Color" From="#00336699" To="#99336699" Duration="0:0:0.3" />
+            <ColorAnimation x:Name="sbMouseEnter_quadroBorda" Storyboard.TargetName="quadroBorda" Storyboard.TargetProperty="Color" From="#006699cc" To="#cc6699cc" Duration="0:0:0.3" />
+            <DoubleAnimation Storyboard.TargetName="quadroLuz" Storyboard.TargetProperty="Opacity" From="0" To="0.7" Duration="0:0:0.3" />
+        </Storyboard>
+        <Storyboard x:Name="sbMouseLeave">
+            <ColorAnimation x:Name="sbMouseLeave_quadroFundo1" Storyboard.TargetName="quadroFundo1" Storyboard.TargetProperty="Color" From="#996699cc" To="#006699cc" Duration="0:0:0.3" />
+            <ColorAnimation x:Name="sbMouseLeave_quadroFundo2" Storyboard.TargetName="quadroFundo2" Storyboard.TargetProperty="Color" From="#99336699" To="#00336699" Duration="0:0:0.3" />
+            <ColorAnimation x:Name="sbMouseLeave_quadroBorda" Storyboard.TargetName="quadroBorda" Storyboard.TargetProperty="Color" From="#cc6699cc" To="#006699cc" Duration="0:0:0.3" />
+            <DoubleAnimation Storyboard.TargetName="quadroLuz" Storyboard.TargetProperty="Opacity" From="0.7" To="0" Duration="0:0:0.3" />
+        </Storyboard>
+        <Storyboard x:Name="sbSelecionar">
+            <DoubleAnimation Storyboard.TargetName="quadro" Storyboard.TargetProperty="StrokeThickness" From="1" To="2" Duration="0:0:0.1" />
+            <DoubleAnimation Storyboard.TargetName="quadroLuz" Storyboard.TargetProperty="Opacity" From="0.5" To="1" Duration="0:0:0.1" />
+            <DoubleAnimation Storyboard.TargetName="quadroLuz" Storyboard.TargetProperty="BlurRadius" From="20" To="70" Duration="0:0:0.1" />
+        </Storyboard>
+        <Storyboard x:Name="sbDesselecionar">
+            <DoubleAnimation Storyboard.TargetName="quadro" Storyboard.TargetProperty="StrokeThickness" From="2" To="1" Duration="0:0:0.1" />
+            <DoubleAnimation Storyboard.TargetName="quadroLuz" Storyboard.TargetProperty="Opacity" From="1" To="0.5" Duration="0:0:0.1" />
+            <DoubleAnimation Storyboard.TargetName="quadroLuz" Storyboard.TargetProperty="BlurRadius" From="70" To="20" Duration="0:0:0.1" />
+        </Storyboard>
+    </UserControl.Resources>
+    <Grid >
+        <Rectangle x:Name="quadro" StrokeThickness="1" RadiusX="5" RadiusY="5">
+            <Rectangle.Fill>
+                <LinearGradientBrush StartPoint="0,0" EndPoint="0,1">
+                    <LinearGradientBrush.GradientStops>
+                        <GradientStop x:Name="quadroFundo1" Color="#006699cc" Offset="0" />
+                        <GradientStop x:Name="quadroFundo2" Color="#00336699" Offset="1" />
+                    </LinearGradientBrush.GradientStops>
+                </LinearGradientBrush>
+            </Rectangle.Fill>
+            <Rectangle.Stroke>
+                <SolidColorBrush x:Name="quadroBorda" Color="#006699cc" />
+            </Rectangle.Stroke>
+            <Rectangle.Effect>
+                <DropShadowEffect x:Name="quadroLuz" BlurRadius="20" Direction="0" ShadowDepth="0" Color="#6699cc" Opacity="0" />
+            </Rectangle.Effect>
+        </Rectangle>
+        <StackPanel x:Name="LayoutRoot" Margin="0,5,0,0">
+            <Image x:Name="imagem" x:FieldModifier="private" />
+            <TextBlock x:Name="preco" x:FieldModifier="private" TextAlignment="Center" FontFamily="Calibri" FontSize="11" FontWeight="Bold" Foreground="LightGreen" Margin="2,5,2,0" />
+            <TextBlock x:Name="descricao" x:FieldModifier="private" TextAlignment="Center" FontFamily="Calibri" FontSize="11" FontWeight="Bold" Foreground="White" Margin="2,0,2,0" />
+        </StackPanel>
+    </Grid>
+</UserControl>

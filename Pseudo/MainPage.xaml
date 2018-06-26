@@ -1,0 +1,39 @@
+﻿<UserControl x:Class="Pseudo.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" 
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+    mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="600"
+    xmlns:pseudo="clr-namespace:Pseudo">
+    <Grid x:Name="LayoutRoot" Loaded="LayoutRoot_Loaded">
+        <pseudo:Jogo x:Name="jogo" />
+        <Grid Width="800" Height="600">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="50" />
+                <RowDefinition Height="*" />
+                <RowDefinition Height="80" />
+            </Grid.RowDefinitions>
+            <Grid x:Name="gridRodape" Grid.Row="3" Width="780" Height="80">
+                <Rectangle Width="780" Height="85" Stroke="#99dddddd" StrokeThickness="2" RadiusX="5" RadiusY="5">
+                    <Rectangle.Fill>
+                        <LinearGradientBrush StartPoint="0,0" EndPoint="0,1">
+                            <LinearGradientBrush.GradientStops>
+                                <GradientStop Offset="0" Color="#dd444444" />
+                                <GradientStop Offset="0.49" Color="#dd333333" />
+                                <GradientStop Offset="0.51" Color="#dd111111" />
+                                <GradientStop Offset="1" Color="#dd000000" />
+                            </LinearGradientBrush.GradientStops>
+                        </LinearGradientBrush>
+                    </Rectangle.Fill>
+                </Rectangle>
+                <StackPanel x:Name="pnlRodape" Margin="5" Orientation="Horizontal">
+                    <StackPanel x:Name="pnlOpcoes" Margin="0,0,10,0" Orientation="Vertical" MinWidth="20">
+                        <pseudo:ObjetoItem x:Name="oiConstruir" Tipo="Opcao" Imagem="Content/Imagens/Construir.png" Selecionavel="True" Selecionar="oiConstruir_Selecionar" Desselecionar="oiConstruir_Desselecionar" />
+                    </StackPanel>
+                    <StackPanel x:Name="pnlItens" Orientation="Horizontal" /> 
+                </StackPanel>
+            </Grid>
+        </Grid>
+        <pseudo:Janela x:Name="janela" />
+    </Grid>
+</UserControl>

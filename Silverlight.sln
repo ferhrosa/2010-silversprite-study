@@ -1,0 +1,93 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Pseudo", "Pseudo\Pseudo.csproj", "{F6DA3ACB-1883-420C-9DB1-3A02EFA68143}"
+EndProject
+Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "Pseudo.Web", "Pseudo.Web\", "{F3B533F9-D8E8-42BD-B702-261AD9F58DAF}"
+	ProjectSection(WebsiteProperties) = preProject
+		TargetFrameworkMoniker = ".NETFramework,Version%3Dv4.0"
+		Debug.AspNetCompiler.VirtualPath = "/Pseudo.Web"
+		Debug.AspNetCompiler.PhysicalPath = "Pseudo.Web\"
+		Debug.AspNetCompiler.TargetPath = "PrecompiledWeb\Pseudo.Web\"
+		Debug.AspNetCompiler.Updateable = "true"
+		Debug.AspNetCompiler.ForceOverwrite = "true"
+		Debug.AspNetCompiler.FixedNames = "false"
+		Debug.AspNetCompiler.Debug = "True"
+		Release.AspNetCompiler.VirtualPath = "/Pseudo.Web"
+		Release.AspNetCompiler.PhysicalPath = "Pseudo.Web\"
+		Release.AspNetCompiler.TargetPath = "PrecompiledWeb\Pseudo.Web\"
+		Release.AspNetCompiler.Updateable = "true"
+		Release.AspNetCompiler.ForceOverwrite = "true"
+		Release.AspNetCompiler.FixedNames = "false"
+		Release.AspNetCompiler.Debug = "False"
+		VWDPort = "49657"
+		DefaultWebSiteLanguage = "Visual C#"
+		ProjOutputReferences = "{F6DA3ACB-1883-420C-9DB1-3A02EFA68143}|ClientBin|false;"
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PseudoFighters", "PseudoFighters\PseudoFighters.csproj", "{6F2E3C6F-FE09-4AE7-8B79-25B8FEC1F4EF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PseudoFighters.Web", "PseudoFighters.Web\PseudoFighters.Web.csproj", "{68B12010-5322-4708-A147-FBCE45316942}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Xna", "Util\Xna.csproj", "{73062DE6-26AB-406F-AEDB-13E58B4B0F0F}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug - Mono Strict|Any CPU = Debug - Mono Strict|Any CPU
+		Debug - Mono Strict|x86 = Debug - Mono Strict|x86
+		Debug|Any CPU = Debug|Any CPU
+		Debug|x86 = Debug|x86
+		Release|Any CPU = Release|Any CPU
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{F6DA3ACB-1883-420C-9DB1-3A02EFA68143}.Debug - Mono Strict|Any CPU.ActiveCfg = Debug|Any CPU
+		{F6DA3ACB-1883-420C-9DB1-3A02EFA68143}.Debug - Mono Strict|Any CPU.Build.0 = Debug|Any CPU
+		{F6DA3ACB-1883-420C-9DB1-3A02EFA68143}.Debug - Mono Strict|x86.ActiveCfg = Debug|Any CPU
+		{F6DA3ACB-1883-420C-9DB1-3A02EFA68143}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F6DA3ACB-1883-420C-9DB1-3A02EFA68143}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F6DA3ACB-1883-420C-9DB1-3A02EFA68143}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{F6DA3ACB-1883-420C-9DB1-3A02EFA68143}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F6DA3ACB-1883-420C-9DB1-3A02EFA68143}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F6DA3ACB-1883-420C-9DB1-3A02EFA68143}.Release|x86.ActiveCfg = Release|Any CPU
+		{F3B533F9-D8E8-42BD-B702-261AD9F58DAF}.Debug - Mono Strict|Any CPU.ActiveCfg = Debug|Any CPU
+		{F3B533F9-D8E8-42BD-B702-261AD9F58DAF}.Debug - Mono Strict|Any CPU.Build.0 = Debug|Any CPU
+		{F3B533F9-D8E8-42BD-B702-261AD9F58DAF}.Debug - Mono Strict|x86.ActiveCfg = Debug|Any CPU
+		{F3B533F9-D8E8-42BD-B702-261AD9F58DAF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F3B533F9-D8E8-42BD-B702-261AD9F58DAF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F3B533F9-D8E8-42BD-B702-261AD9F58DAF}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{F3B533F9-D8E8-42BD-B702-261AD9F58DAF}.Release|Any CPU.ActiveCfg = Debug|Any CPU
+		{F3B533F9-D8E8-42BD-B702-261AD9F58DAF}.Release|Any CPU.Build.0 = Debug|Any CPU
+		{F3B533F9-D8E8-42BD-B702-261AD9F58DAF}.Release|x86.ActiveCfg = Debug|Any CPU
+		{6F2E3C6F-FE09-4AE7-8B79-25B8FEC1F4EF}.Debug - Mono Strict|Any CPU.ActiveCfg = Debug|Any CPU
+		{6F2E3C6F-FE09-4AE7-8B79-25B8FEC1F4EF}.Debug - Mono Strict|Any CPU.Build.0 = Debug|Any CPU
+		{6F2E3C6F-FE09-4AE7-8B79-25B8FEC1F4EF}.Debug - Mono Strict|x86.ActiveCfg = Debug|Any CPU
+		{6F2E3C6F-FE09-4AE7-8B79-25B8FEC1F4EF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6F2E3C6F-FE09-4AE7-8B79-25B8FEC1F4EF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6F2E3C6F-FE09-4AE7-8B79-25B8FEC1F4EF}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{6F2E3C6F-FE09-4AE7-8B79-25B8FEC1F4EF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6F2E3C6F-FE09-4AE7-8B79-25B8FEC1F4EF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6F2E3C6F-FE09-4AE7-8B79-25B8FEC1F4EF}.Release|x86.ActiveCfg = Release|Any CPU
+		{68B12010-5322-4708-A147-FBCE45316942}.Debug - Mono Strict|Any CPU.ActiveCfg = Debug|Any CPU
+		{68B12010-5322-4708-A147-FBCE45316942}.Debug - Mono Strict|Any CPU.Build.0 = Debug|Any CPU
+		{68B12010-5322-4708-A147-FBCE45316942}.Debug - Mono Strict|x86.ActiveCfg = Debug|Any CPU
+		{68B12010-5322-4708-A147-FBCE45316942}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{68B12010-5322-4708-A147-FBCE45316942}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{68B12010-5322-4708-A147-FBCE45316942}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{68B12010-5322-4708-A147-FBCE45316942}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{68B12010-5322-4708-A147-FBCE45316942}.Release|Any CPU.Build.0 = Release|Any CPU
+		{68B12010-5322-4708-A147-FBCE45316942}.Release|x86.ActiveCfg = Release|Any CPU
+		{73062DE6-26AB-406F-AEDB-13E58B4B0F0F}.Debug - Mono Strict|Any CPU.ActiveCfg = Debug|Any CPU
+		{73062DE6-26AB-406F-AEDB-13E58B4B0F0F}.Debug - Mono Strict|Any CPU.Build.0 = Debug|Any CPU
+		{73062DE6-26AB-406F-AEDB-13E58B4B0F0F}.Debug - Mono Strict|x86.ActiveCfg = Debug|Any CPU
+		{73062DE6-26AB-406F-AEDB-13E58B4B0F0F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{73062DE6-26AB-406F-AEDB-13E58B4B0F0F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{73062DE6-26AB-406F-AEDB-13E58B4B0F0F}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{73062DE6-26AB-406F-AEDB-13E58B4B0F0F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{73062DE6-26AB-406F-AEDB-13E58B4B0F0F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{73062DE6-26AB-406F-AEDB-13E58B4B0F0F}.Release|x86.ActiveCfg = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

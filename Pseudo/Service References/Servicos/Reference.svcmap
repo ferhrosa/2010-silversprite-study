@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="57f1289f-b4aa-446d-a562-f161e304d8da" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>true</GenerateAsynchronousMethods>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings>
+      <CollectionMapping TypeName="System.Collections.Generic.List`1" Category="List" />
+    </CollectionMappings>
+    <GenerateSerializableTypes>false</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://localhost:49657/Pseudo.Web/ServicoPseudo.svc" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="ServicoPseudo.disco" MetadataType="Disco" ID="7227907e-de57-4be1-b6ad-a6846a9dec67" SourceId="1" SourceUrl="http://localhost:49657/Pseudo.Web/ServicoPseudo.svc?disco" />
+    <MetadataFile FileName="ServicoPseudo.xsd" MetadataType="Schema" ID="3c611fdc-d76c-4f9e-a297-a0dc1961c33a" SourceId="1" SourceUrl="http://localhost:49657/Pseudo.Web/ServicoPseudo.svc?xsd=xsd2" />
+    <MetadataFile FileName="ServicoPseudo1.xsd" MetadataType="Schema" ID="1521c33e-3470-4c7b-ad4b-0ee635f4183b" SourceId="1" SourceUrl="http://localhost:49657/Pseudo.Web/ServicoPseudo.svc?xsd=xsd0" />
+    <MetadataFile FileName="ServicoPseudo.wsdl" MetadataType="Wsdl" ID="df1b8e44-b9b7-4fee-8737-1eddff046524" SourceId="1" SourceUrl="http://localhost:49657/Pseudo.Web/ServicoPseudo.svc?wsdl" />
+    <MetadataFile FileName="ServicoPseudo2.xsd" MetadataType="Schema" ID="960cee01-de08-4985-b974-5ba3b5df0814" SourceId="1" SourceUrl="http://localhost:49657/Pseudo.Web/ServicoPseudo.svc?xsd=xsd1" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>
